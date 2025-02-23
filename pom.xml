@@ -25,6 +25,7 @@
         <module>greedyalgorithms</module>
         <module>graphs</module>
         <module>parallelcomputing</module>
+        <module>myassortedcodingresources</module>
     </modules>
     <packaging>pom</packaging>
 

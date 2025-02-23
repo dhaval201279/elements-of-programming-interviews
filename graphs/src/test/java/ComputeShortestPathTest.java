@@ -1,7 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.annotation.PostConstruct;
+//import javax.annotation.PostConstruct;
 
 import java.util.Arrays;
 import java.util.Collections;
