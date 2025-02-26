@@ -3,6 +3,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Function;
 
 public class RateLimiter {
     private final int capacity;
@@ -46,7 +47,7 @@ public class RateLimiter {
                 System.out.println("---- buckets : " + buckets);
                 return false;
             }
-            if(bucket.compareAndSet(currentTokens, currentTokens -1)) {
+            if(bucket.compareAndSet(currentTokens, currentTokens - 1)) {
                 System.out.println("***** buckets : " + buckets);
                 return true;
             }
